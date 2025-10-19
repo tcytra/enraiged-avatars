@@ -1,0 +1,39 @@
+{
+    "name": "tcytra/enraiged-avatars",
+    "description": "Enraiged Avatars provides avatarable services for Enraiged Laravel models.",
+    "keywords": ["avatars", "enraiged"],
+    "homepage": "https://github.com/tcytra/enraiged-avatars",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Todd Cytra",
+            "email": "tcytra@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^12.0",
+        "tcytra/enraiged-core": "^0.4",
+        "tcytra/enraiged-files": "^0.4",
+        "tcytra/enraiged-support": "^0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enraiged\\Avatars\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=enraiged-avatars --ansi --force"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Enraiged\\Avatars\\AvatarsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
