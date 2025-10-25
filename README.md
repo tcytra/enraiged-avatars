@@ -17,6 +17,12 @@ Publish the Enraiged Avatars assets to the local project:
 php artisan vendor:publish --tag=enraiged-avatars --ansi --force
 ```
 
+Run the database migrations:
+
+```bash
+php artisan migrate
+```
+
 
 ## License
 

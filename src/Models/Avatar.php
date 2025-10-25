@@ -41,4 +41,14 @@ class Avatar extends Model implements AttachableContract
     {
         return $this->morphTo();
     }
+
+    /**
+     *  Return the universal resource location for the attachable file.
+     *
+     *  @return string
+     */
+    public function url(): string
+    {
+        return route('avatars.show', ['avatar' => $this->id], config('enraiged.app.absolute_uris'));
+    }
 }
