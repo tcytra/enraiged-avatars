@@ -3,7 +3,7 @@
 2025-10-25 : 0.4.0-beta.2 (prerelease)  
 Update: Corrected minor issue with the avatar file url handling
 
-- Resync enraiged-core publishable assets
+- Resync enraiged-avatars publishable assets
 
 ---
 
